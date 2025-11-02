@@ -7,7 +7,8 @@ const urlsToCache = [
     'index.html',
     'main.js', 
     'sw_register.js', 
-    // تضمين الروابط الخارجية التي نحتاجها (Bootstrap)
+    'payloads/goldhen.js'
+    'payloads/goldhen.bin'
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
     // أي ملفات حمولة ستضيفها لاحقًا
@@ -52,11 +53,4 @@ self.addEventListener('fetch', function(event) {
     );
 
 });
-// جزء من service-worker.js
 
-const urlsToCache = [
-    // ... (الملفات الأخرى موجودة هنا) ...
-    'payloads/goldhen.js',
-    'payloads/goldhen.bin', // <--- أضف هذا السطر
-    // ...
-];
