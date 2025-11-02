@@ -50,4 +50,13 @@ self.addEventListener('fetch', function(event) {
                 return fetch(event.request);
             })
     );
+
 });
+// جزء من service-worker.js
+
+const urlsToCache = [
+    // ... (الملفات الأخرى موجودة هنا) ...
+    'payloads/goldhen.js',
+    'payloads/goldhen.bin', // <--- أضف هذا السطر
+    // ...
+];
